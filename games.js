@@ -1,6 +1,3 @@
-
-
-
 (function () {
     var slidersContainer = document.querySelector(".sliders-container");
   

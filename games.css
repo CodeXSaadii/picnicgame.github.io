@@ -70,8 +70,47 @@ span {
    text-shadow:  0 0 25px #f0a11f;
  }
 
+ 
+ @media (max-width: 768px){
+  
+  .navbar-toggler {
+    border: none !important;
+    background-color: white !important;
+   /* background-color: rgba(0,0,0,0.6)  !important; */
+    margin-right: 2rem !important;
+    
+  }
+ 
+}
 
+@media (max-width: 768px) {
+  .navbar {
+    padding: 30px; 
+  }
+  .navbar-brand {
+    font-size: 24px; 
+  }
+  .nav-link {
+    font-size: 18px;
+  }
 
+  .navbar-toggler {
+    margin-right: 2rem !important;
+  }
+  
+  .navbar-toggler:focus {
+    box-shadow: none !important;
+  }
+  .logo {
+    height: 200px !important;
+    width: 200px !important;
+    font-size: 30px !important;
+  }
+  .lg-txt {
+    font-size: 70px !important;
+    margin-right: 2rem !important;
+  }
+}
 
 
 .ms--images {
@@ -337,48 +376,91 @@ span {
   .pagination__item--active .pagination__button:after {
     opacity: 1;
   }
-  
-  @media screen and (max-width: 860px) {
-    body {
-      background-size: cover;
-    }
+
+  @media screen and (max-width: 1200px) {
+    .ms--images {
+       width: 80%;
+       height: 300px;
+     }
     .ms--numbers {
-      left: calc(50% - 120px);
-    }
-  
+       width: 200px;
+       height: 200px;
+     }
     .ms--titles {
-      left: calc(50% - 200px);
-      top: calc(50% - 135px);
-      text-align: center;
-    }
-  
+       width: 300px;
+       height: 150px;
+     }
     .ms--links {
-      left: calc(50% - 60px);
-      top: calc(50% + 80px);
-    }
-  
-    .pagination {
-      left: 50%;
-      top: calc(100% - 50px);
-      transform: translateX(-50%);
-    }
-  }
-  @media screen and (max-width: 600px) {
+       width: 100px;
+       height: 50px;
+     }
+   }
+
+   @media screen and (max-width: 992px) {
+    .ms--images {
+       width: 60%;
+       height: 250px;
+     }
+    .ms--numbers {
+       width: 150px;
+       height: 150px;
+     }
+    .ms--titles {
+       width: 250px;
+       height: 120px;
+     }
+    .ms--links {
+       width: 80px;
+       height: 40px;
+     }
+   }
+
+   @media screen and (max-width: 768px) {
+    .ms--images {
+       width: 40%;
+       height: 200px;
+     }
+    .ms--numbers {
+       width: 100px;
+       height: 100px;
+     }
+    .ms--titles {
+       width: 200px;
+       height: 100px;
+     }
+    .ms--links {
+       width: 60px;
+       height: 30px;
+     }
+   }
+
+   @media screen and (max-width: 480px) {
+    .ms--images {
+       width: 30%;
+       height: 150px;
+     }
+    .ms--numbers {
+       width: 80px;
+       height: 80px;
+     }
+    .ms--titles {
+       width: 150px;
+       height: 80px;
+     }
+    .ms--links {
+       width: 40px;
+       height: 20px;
+     }
+   }
+
+
+  @media screen and (max-width: 480px) {
     body {
-      background-size: cover;
-    }
-      .ms--images {
-        overflow: visible;
-      }
-  }
-  @media screen and (max-width: 400px) {
-    body {
-      background-size: cover;
-    }
-    .ms--titles .ms-slide {
-      transform: scale(0.8);
+      font-size: 14px;
     }
   }
+
+
   *,
   *:before,
   *:after {
@@ -387,11 +469,14 @@ span {
   
   body {
     color: white;
-    background-image: url(pics/Games-bg.png);
     overflow: hidden;
+    background-image: url(pics/Games-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
   }
+
   
   a {
     color: white;
